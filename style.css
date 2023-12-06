@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: cursive;
+}
+body{
+    background-color: rgb(1, 1, 10);
+    display: flex;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.menu{ 
+    background-color: rgb(5, 38, 82);
+    width: 60px;   
+    height: 100vh;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 98%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover, .active, .data-info .box:hover, td:hover{
+    background-color: #ffffff55;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: rgb(255, 0, 0);
+}
+ul li a i{
+    font-size: 25px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: rgb(0, 110, 255);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: rgb(5, 38, 82);
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s ease-in-out;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 6px;
+}
+td, th{
+    background-color: rgb(5, 38, 82);
+    height: 40px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+th{
+    background-color: rgb(0, 110, 255);
+}
+.price, .count{
+    padding: 6px;
+    border-radius: 5px;
+}
+.price{
+    background-color: green;
+}
+.count{
+    background-color: gold;
+    color: black;
+}
